@@ -72,31 +72,31 @@
       <form  class="contenedor_formulario__form" novalidate>
         <div class="contenedor_dato">
         <label for="nombre">Nombre </label>
-        <input class="nombre" type="text" name="nombre" >
+        <input class="nombre" type="text" name="nombre" id="nombre" >
         <p class="form_error_nom"></p>
         </div>
 
         <div class="contenedor_dato">
         <label for="apellido">Apellido</label>
-        <input class="apellido" type="text" name="apellido" >
+        <input class="apellido" type="text" name="apellido" id="apellido">
         <p class="form_error_ape"></p>
         </div>
   
         <div class="contenedor_dato">
         <label for="email">Email</label>
-        <input class="email" type="email" name="email" placeholder="Ej: pepito@gmail.com">
+        <input class="email" type="email" name="email" id="email" placeholder="Ej: pepito@gmail.com">
         <p class="form_error_email"></p>
         </div> 
         
         <div class="contenedor_dato">
         <label for="telefono">Teléfono</label>
-          <input class="telefono" type="number" name="telefono" placeholder="Entre 8 y 15 caracteres">
+          <input class="telefono" type="number" name="telefono" id="telefono" placeholder="Entre 8 y 15 caracteres">
         <p class="form_error_tel"></p>
         </div>
   
         <div class="contenedor_dato">
         <label for="mensaje">Mensaje</label>
-          <textarea name="mensaje" class="form_error_msg"></textarea>
+          <textarea name="mensaje" id="mensaje" class="form_error_msg"></textarea>
         </div> 
 
         <input type="hidden" name="_next" value="http://127.0.0.1:5501/">
