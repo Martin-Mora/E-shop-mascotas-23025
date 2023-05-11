@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- meta description y favicon -->
+  <meta name="description" content="Buddy's Shop es una empresa dedicada al cuidado y bienestar de perros y gatos, ofreciendo servicio de peluquería.">
+  <link rel="shortcut icon" href="./img/Dog-paw.ico" type="image/x-icon">
+
+<!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Buddy's shop | Contacto</title>
+</head>
+<body>
+
+  <div class="promo-local">
+    <p class="promo-local__titulo">Descuentos desde $10.000!</p>
+    <div class="promo-local__sucursales">
+      <i class='bx bxs-store-alt'></i>
+      <div class="promo-local__sucursales--titulo"><a href="#iframe">Nuestras sucursales</a></div>
+    </div>
+  </div>
+  
+  <header>
+    <figure class="logo">
+      <img class="logo__img" src="./img/Dog-paw.svg" alt="perro gato veterinaria">
+      <h1 class="title_page">Buddy's Shop</h1>
+    </figure>
+
+
+    <nav class="navOcult">
+      <ul class="listaItems">
+        <li class="item x">x</li>
+        <li class="item"><a href="./index.html">Inicio</a></li>
+        <li class="item"><a href="./productos.html">Productos</a></li>
+        <li class="item"><a href="./servicios.html">Servicios</a></li>
+        <li class="item"><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger"><i class='bx bx-menu'></i></div>
+  </header>
+
+  <!-- Inicio Contacto -->
+  <main>
+
+     <!-- modal -->
+     <div class="modal-background">
+  
+     </div>
+
+     <!-- modal form -->
+
+     <div class="modal-form">
+      <div class="modal-form__container">
+        <h5 class="modal-form__container--title">Formulario enviado. Gracias por contactarte!</h5>
+        <button class="modal-form__container--btCerrar">Cerrar</button>
+      </div>
+     </div>
+    
+    <section class="contacto">
+    <h2 class="contenedor_titulo">Formulario de Contacto</h2>
+    <p class="text1">En el siguiente formulario puede contactarnos para responder ante cualquier consulta que tenga sobre nuestra tienda.</p>
+    
+    <div class="contenedor_formulario">
+      <form  class="contenedor_formulario__form" novalidate>
+        <div class="contenedor_dato">
+        <label for="nombre">Nombre </label>
+        <input class="nombre" type="text" name="nombre" >
+        <p class="form_error_nom"></p>
+        </div>
+
+        <div class="contenedor_dato">
+        <label for="apellido">Apellido</label>
+        <input class="apellido" type="text" name="apellido" >
+        <p class="form_error_ape"></p>
+        </div>
+  
+        <div class="contenedor_dato">
+        <label for="email">Email</label>
+        <input class="email" type="email" name="email" placeholder="Ej: pepito@gmail.com">
+        <p class="form_error_email"></p>
+        </div> 
+        
+        <div class="contenedor_dato">
+        <label for="telefono">Teléfono</label>
+          <input class="telefono" type="number" name="telefono" placeholder="Entre 8 y 15 caracteres">
+        <p class="form_error_tel"></p>
+        </div>
+  
+        <div class="contenedor_dato">
+        <label for="mensaje">Mensaje</label>
+          <textarea name="mensaje" class="form_error_msg"></textarea>
+        </div> 
+
+        <input type="hidden" name="_next" value="http://127.0.0.1:5501/">
+        <input type="hidden" name="_captcha" value="false">
+        
+        <input type="submit" value="Enviar" class="btn-enviar">
+      </form>
+      </div>
+
+    <h3 class="contenedor_titulo">Horarios de Atencion:</h3>
+
+
+    <div class="contenedor-horario">
+      <div class="contenedor-horario__img">
+        <img src="./img/Dog-paw.svg" alt="">
+      </div>
+      <ul class="list_horario">
+      <li>Lunes A Viernes 8:00am a 20:00pm</li>
+      <li>Sabados 9:00am a 13:00pm</li>
+      <li>Domingos y Feriados: No se brindara Atención,disculpe las molestias</li>
+      </ul>
+    </div>
+    
+    
+  </section>
+  
+  <h3 class="contenedor_titulo" id="iframe">También te invitamos a visitar nuestra tienda localizada en :</h3>
+    <div class="contenedor_iframe">
+
+      <div class="contenedor_iframe__iframe">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13102.339397139607!2d-58.2771191!3d-34.8163851!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3297cd1635e8d%3A0x5a55a2d7cd9e7810!2sVeterinaria%20Wippet!5e0!3m2!1ses-419!2sar!4v1683580611992!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="contenedor_iframe__iframe">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6551.868166169698!2d-58.2768135!3d-34.8076002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32966d8f0316b%3A0x4e19a9800dcbb038!2sCrazy%20Pet!5e0!3m2!1ses-419!2sar!4v1681699519662!5m2!1ses-419!2sar"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="contenedor_iframe__iframe">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52409.41831426055!2d-58.308018882304225!3d-34.81628963904911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3296486b43507%3A0x77e2ccccf29ab8c8!2sPuppy%20Pet%20Shop!5e0!3m2!1ses-419!2sar!4v1683580984775!5m2!1ses-419!2sar"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    
+    </div>
+  <!-- Fin Contacto -->
+
+  </main> 
+  <footer>
+    <section class="medios-pagos">
+      <h2 class="medios-pagos__title">MEDIOS DE PAGO</h2>
+
+    <div class="medios-pagos__card">
+      <img src="./img/pago01.png" alt="">
+      <img src="./img/pago02.png" alt="">
+      <img src="./img/pago03.png" alt="">
+      <img src="./img/pago04.png" alt="">
+      <img src="./img/pago05.png" alt="">
+      <img src="./img/pago06.png" alt="">
+      <img src="./img/pago07.png" alt="">
+      <img src="./img/pago08.png" alt="">
+      <img src="./img/pago09.png" alt="">
+      <img src="./img/pago10.png" alt="">
+      <img src="./img/pago11.png" alt="">
+      <img src="./img/pago12.png" alt="">
+    </div>
+    </section>
+
+    <section class="redes">
+      <h2 class="redes__titulo">CONTACTANOS</h2>
+      <div class="redes__icon">
+        <a href="#"><i class='bx bxl-whatsapp'></i></a> 
+        <a href="#"><i class='bx bxl-facebook-circle'></i></a> 
+        <a href="#"><i class='bx bxl-instagram-alt'></i></a> 
+        <a href="#"><i class='bx bxl-tiktok'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a> 
+      </div>
+    </section>
+  </footer>
+
+
+  <script src="./js/data.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/formulario.js"></script>
+</body>
+</html>
