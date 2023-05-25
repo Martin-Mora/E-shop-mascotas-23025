@@ -66,46 +66,51 @@
     
     <section class="contacto">
     <h2 class="contenedor_titulo">Formulario de Contacto</h2>
-    <p class="text1">En el siguiente formulario puede contactarnos para responder ante cualquier consulta que tenga sobre nuestra tienda.</p>
+    <p class="text1 text-contacto">En el siguiente formulario puede contactarnos para responder ante cualquier consulta que tenga sobre nuestra tienda.</p>
     
-    <div class="contenedor_formulario">
-      <form  class="contenedor_formulario__form" novalidate>
-        <div class="contenedor_dato">
-        <label for="nombre">Nombre </label>
-        <input class="nombre" type="text" name="nombre" id="nombre" >
-        <p class="form_error_nom"></p>
-        </div>
+    <div class="contacto__contenido">
+      <img class="contacto__contenido--gato-cel" src="./img/form_gato-cel.jpg" alt="">
+      <img class="contacto__contenido--perro" src="./img/form_gato.jpg" alt="">
+      <div class="contenedor_formulario">
+        <form  class="contenedor_formulario__form" novalidate>
+          <div class="contenedor_dato">
+          <label for="nombre">Nombre </label>
+          <input class="nombre" type="text" name="nombre" id="nombre" >
+          <p class="form_error_nom"></p>
+          </div>
 
-        <div class="contenedor_dato">
-        <label for="apellido">Apellido</label>
-        <input class="apellido" type="text" name="apellido" id="apellido">
-        <p class="form_error_ape"></p>
-        </div>
-  
-        <div class="contenedor_dato">
-        <label for="email">Email</label>
-        <input class="email" type="email" name="email" id="email" placeholder="Ej: pepito@gmail.com">
-        <p class="form_error_email"></p>
-        </div> 
-        
-        <div class="contenedor_dato">
-        <label for="telefono">Teléfono</label>
-          <input class="telefono" type="number" name="telefono" id="telefono" placeholder="Entre 8 y 15 caracteres">
-        <p class="form_error_tel"></p>
-        </div>
-  
-        <div class="contenedor_dato">
-        <label for="mensaje">Mensaje</label>
-          <textarea name="mensaje" id="mensaje" class="form_error_msg"></textarea>
-        </div> 
+          <div class="contenedor_dato">
+          <label for="apellido">Apellido</label>
+          <input class="apellido" type="text" name="apellido" id="apellido">
+          <p class="form_error_ape"></p>
+          </div>
+    
+          <div class="contenedor_dato">
+          <label for="email">Email</label>
+          <input class="email" type="email" name="email" id="email" placeholder="Ej: pepito@gmail.com">
+          <p class="form_error_email"></p>
+          </div> 
+          
+          <div class="contenedor_dato">
+          <label for="telefono">Teléfono</label>
+            <input class="telefono" type="number" name="telefono" id="telefono" placeholder="Entre 8 y 15 caracteres">
+          <p class="form_error_tel"></p>
+          </div>
+    
+          <div class="contenedor_dato">
+          <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" class="form_error_msg"></textarea>
+          </div> 
 
-        <input type="hidden" name="_next" value="http://127.0.0.1:5501/">
-        <input type="hidden" name="_captcha" value="false">
-        
-        <input type="submit" value="Enviar" class="btn-enviar">
-      </form>
+          <input type="hidden" name="_next" value="http://127.0.0.1:5501/">
+          <input type="hidden" name="_captcha" value="false">
+          
+          <input type="submit" value="Enviar" class="btn-enviar">
+        </form>
       </div>
-
+      <img class="contacto__contenido--perro-cel" src="./img/form_perro-cel.png" alt="">
+      <img class="contacto__contenido--gato" src="./img/form_perro.jpg" alt="">
+    </div>
     <h3 class="contenedor_titulo">Horarios de Atencion:</h3>
 
 

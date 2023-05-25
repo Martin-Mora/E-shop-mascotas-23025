@@ -114,7 +114,7 @@ header{
   margin-left: 1em;
   display: flex;
   align-items: center;
-  /* border: 1px solid red; */
+  
 }
 
 .logo__img{
@@ -125,8 +125,6 @@ header{
 .title_page{
   font-size: 1em;
   margin-left: 0.5em;
-  /* border: 1px solid red; */
-
 }
 
 @media (min-width:768px) {
@@ -770,12 +768,16 @@ box-shadow: 9px 10px 5px -3px rgba(0,0,0,0.75);
   letter-spacing: 1px;
   color: var(--color-secundario);
   background-color: var(--Soft-violet);
+  cursor: pointer;
+}
+
+.containerDetails__details--confirm-btn:hover{
+  opacity: 0.8;
 }
 
 @media (min-width:768px) {
 
   .containerDetails{
-    /* border: 1px solid red; */
     max-width: 750px;
     display: flex;
     align-items: center;
@@ -784,7 +786,6 @@ box-shadow: 9px 10px 5px -3px rgba(0,0,0,0.75);
   }
 
   .containerDetails__img{
-    /* border: 1px solid forestgreen; */
     width: 50%;
     display: flex;
     justify-content: center;
@@ -795,7 +796,6 @@ box-shadow: 9px 10px 5px -3px rgba(0,0,0,0.75);
   }
 
   .containerDetails__details{
-    /* border: 1px solid violet; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -817,11 +817,8 @@ box-shadow: 9px 10px 5px -3px rgba(0,0,0,0.75);
 
 @media (min-width:1440px){
   .containerDetails{
-
     max-width: 1200px;
     height: 70vh;
-    /* padding-left: 2em; */
-    
   }
 
   .containerDetails__details{
@@ -837,7 +834,6 @@ box-shadow: 9px 10px 5px -3px rgba(0,0,0,0.75);
   }
 
   .containerDetails__img img{
-    /* width: 100%; */
     object-fit: contain;
   }
 
@@ -859,7 +855,6 @@ box-shadow: 9px 10px 5px -3px rgba(0,0,0,0.75);
 
   .containerDetails__details--confirm-btn{
     width: 30%;
-    /* border: 1px solid blue; */
   }
 }
 
@@ -878,7 +873,6 @@ box-shadow: 9px 10px 5px -3px rgba(0,0,0,0.75);
   font-size: 1.5em;
   }
   
-  /*para las listas*/
 .list-esp, .list-extra {
   display: flex;
   flex-direction: column;
@@ -895,8 +889,9 @@ box-shadow: 9px 10px 5px -3px rgba(0,0,0,0.75);
 
 /*Tabla*/
 table{
-  background-color: var(--Soft-violet);
+  background-color: var(--Very-dark-blue);
   text-align: center;
+  cursor: pointer;
 
 }
 .table1 {
@@ -904,19 +899,21 @@ table{
 }
 
 th {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  
   font-size: 13px; 
-  font-weight: normal;
   padding: 8px;
-  background:var(--Very-dark-blue);
-  border-bottom: 1px solid var(--Soft-violet); 
-  color: var(--Soft-violet); }
+  background:var(--Soft-violet);
+  color: var(--color-secundario);
+  
+}
 
-td {
+table tr{
+  border: 1px solid var(--Soft-violet);
+}
+
+td{
   padding: 8px;
-  background: var(--Very-dark-blue);
-  color: white;
+  background: var(--color-secundario);
   border-top: 1px solid transparent;
   
 }
@@ -924,7 +921,8 @@ td {
 tr:hover td { background:var(--Soft-violet); color: var(--Very-dark-blue); }  
 
 
-/*p del final*/
+
+
 .text1 {
   font-weight: 700;
   font-style: oblique;
@@ -934,10 +932,6 @@ tr:hover td { background:var(--Soft-violet); color: var(--Very-dark-blue); }
   margin-bottom: 30px;
   }
 
-
-  /*-----------------------------------------------------------------------------------------------------------------------------*/
-
-  /* caja padre */
   .cardTamañoPerro,.Tratamiento{
     width: 300px;
     padding: 10px;
@@ -945,7 +939,6 @@ tr:hover td { background:var(--Soft-violet); color: var(--Very-dark-blue); }
     margin:2em auto;
   }
 
-  /* caja para cada uno de los hijos */
   .cardTamañoPerro__card, .cardTratamiento__card{
     background-color: var(--Very-dark-blue);
     display: flex;
@@ -957,7 +950,6 @@ tr:hover td { background:var(--Soft-violet); color: var(--Very-dark-blue); }
     }
   
     
-  /* caja de la imagen */
   .cardTamañoPerro_img,.cardTratamiento_img{
     width: 200px;
     height: 300px;
@@ -965,13 +957,13 @@ tr:hover td { background:var(--Soft-violet); color: var(--Very-dark-blue); }
     padding: auto;
   }
   
-  /* imagen */
+
   .cardTamañoPerro img, .cardTratamiento__card img{
     width: 100%;
     height: 100%;
   }
 
-  /* descripcion */
+
   .cardTamañoPerro_description,.cardTratamiento_description{
     color: var(--color-secundario);
     background-color: var(--Soft-violet);
@@ -980,8 +972,7 @@ tr:hover td { background:var(--Soft-violet); color: var(--Very-dark-blue); }
 
   }
   
-  /* MEDIA */
-  /* hasta esta resolucion: resolucion */
+
 @media (max-width:768px) {
   body{
     background-color: white;
@@ -993,8 +984,6 @@ tr:hover td { background:var(--Soft-violet); color: var(--Very-dark-blue); }
   }
 }
 
-/* tablet  */
-/* desde esta resolucion: resolucion */
 @media (min-width:768px) {
   body{
     background-color: white;
@@ -1027,7 +1016,6 @@ tr:hover td { background:var(--Soft-violet); color: var(--Very-dark-blue); }
 }
 
 
-/* notebook o pantallas de escritorio chicas */
 @media (min-width:1024px) {
   .cardTamañoPerro,.Tratamiento{
     width: 1024px;
@@ -1058,7 +1046,6 @@ tr:hover td { background:var(--Soft-violet); color: var(--Very-dark-blue); }
 
 }
 
-/* Pantalla Escritorio */
 @media (min-width:1440px) {
   .cardTamañoPerro,.Tratamiento{
     width: 1440px;
@@ -1078,10 +1065,15 @@ tr:hover td { background:var(--Soft-violet); color: var(--Very-dark-blue); }
   
   }
 
-  /*------------------------------------------CONTACTO-------------------------------------------------------------------------------------*/
+  /* contacto */
+
 .contacto{
   background-color: white;
   padding: 10px;
+  }
+
+  .text-contacto{
+    text-align: center;
   }
   
   .contenedor_titulo{
@@ -1090,9 +1082,15 @@ tr:hover td { background:var(--Soft-violet); color: var(--Very-dark-blue); }
   text-align: center;
   margin:2em 0;
   }
+
+  .contacto__contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
   
   .contenedor_formulario{
-    /* background-color: var(--Very-dark-blue); */
     border: 2px solid var(--Soft-violet);
     text-decoration: none;
     color: var(--Soft-violet);
@@ -1104,10 +1102,20 @@ tr:hover td { background:var(--Soft-violet); color: var(--Very-dark-blue); }
     align-items: center;
     }
 
+  .contacto__contenido--gato,.contacto__contenido--perro{
+    display: none;
+  }
+
+  .contacto__contenido--gato-cel,.contacto__contenido--perro-cel{
+    width: 300px;
+    height: 200px;
+  }
+
     .contenedor_formulario__form{
       display: flex;
       flex-direction: column;
       align-items: center;
+      
     }
 
     .contenedor_formulario__form .title-input{
@@ -1131,7 +1139,6 @@ tr:hover td { background:var(--Soft-violet); color: var(--Very-dark-blue); }
     .contenedor_dato{
       margin: .5em auto;
       width: 90%;
-      /* border: 1px solid red; */
     }
 
     .contenedor_dato label{
@@ -1165,8 +1172,8 @@ tr:hover td { background:var(--Soft-violet); color: var(--Very-dark-blue); }
     }
 
     input::placeholder {
-      color: rgba(0, 0, 0, 0.4); /* ajusta la opacidad del color del placeholder */
-      font-size: 14px; /* ajusta el tamaño de fuente */
+      color: rgba(0, 0, 0, 0.4); 
+      font-size: 14px; 
     }
 
     .btn-enviar:hover{
@@ -1186,7 +1193,6 @@ tr:hover td { background:var(--Soft-violet); color: var(--Very-dark-blue); }
     
 
     .contenedor_iframe{
-      /* background-color: var(--Very-dark-blue); */
       margin: auto;
       width: 350px;
       padding: 10px;
@@ -1199,7 +1205,6 @@ tr:hover td { background:var(--Soft-violet); color: var(--Very-dark-blue); }
     height: 350px;
     margin:2em auto;
     padding: auto;
-    /* border: 1px solid red; */
     border:1px solid #33333343;
   }
 
@@ -1243,8 +1248,6 @@ tr:hover td { background:var(--Soft-violet); color: var(--Very-dark-blue); }
   
 
 
-    /* MEDIA */
-  /* hasta esta resolucion: resolucion */
 @media (max-width:768px) {
   .list_horario, .text1{
     display: flex;
@@ -1258,9 +1261,25 @@ tr:hover td { background:var(--Soft-violet); color: var(--Very-dark-blue); }
 
 }
 
-/* tablet  */
-/* desde esta resolucion: resolucion */
 @media (min-width:768px) {
+  .contacto__contenido{
+    flex-direction: row;
+    margin: auto;
+  }
+
+  .contacto__contenido--gato,.contacto__contenido--perro{
+    display: block;
+  }
+
+  .contacto__contenido--gato-cel,.contacto__contenido--perro-cel{
+    display: none;
+  }
+  
+  .contacto__contenido--perro,.contacto__contenido--gato{
+    width: 230px;
+    height: 300px;
+  }
+
   .contenedor_formulario{
     width: 400px;
   }
@@ -1292,14 +1311,27 @@ tr:hover td { background:var(--Soft-violet); color: var(--Very-dark-blue); }
 }
 
 @media (min-width:1024px) {
+  .contacto__contenido--perro,.contacto__contenido--gato{
+    width: 400px;
+    height: 600px;
+
+  }
+
   .modal-form__container{
     width: 50%;
   }
   
 }
 
-/* Pantalla Escritorio */
 @media (min-width:1440px) {
+
+   .contacto__contenido--perro{
+    margin-left: 10em;
+  }
+
+  .contacto__contenido--gato{
+    margin-right: 10em;
+  }
  
   .modal-form__container{
     width: 30%;
